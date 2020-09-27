@@ -52,8 +52,8 @@ check_value "$wind" "Wind" "Speed" "mph"
 alertlength=${#mailalert}
 if [ "$alertlength" -gt 0 ]; then
         rainalert=$(cat rainfall_total)
-        echo $mailalert $rainalert| mailx  -s "Alerts" test@test.com
-        echo $mailalert $rainalert| mailx  -s "Alerts" test@test.com
+        echo $mailalert $rainalert| mailx  -s "Alerts" $email_1
+        echo $mailalert $rainalert| mailx  -s "Alerts" $email_2
 
 
 fi
