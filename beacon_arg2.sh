@@ -47,6 +47,7 @@ if [ "$temp_value" -gt 25 ]; then
         if [ "$1" = "12:3B:6A:1B:9D:91" ]; then
         locationz="Conservatory"
         fi
-        echo $1 $temp_value " C"| mailx  -s "High Temperature $locationz $temp_value C" test@test.com
+        echo $1 $temp_value " C"| mailx  -s "High Temperature $locationz $temp_value C" $email_1
+        echo $1 $temp_value " C"| mailx  -s "High Temperature $locationz $temp_value C" $email_2
 
 fi
