@@ -1,5 +1,7 @@
 #!/bin/bash
 export ow_api="your_open_weather_api"
+export email_1="test@test.com"
+export email_2="test1@test.com"
 #Portaferry
 #export lat=54.38
 #export lon=-5.54
